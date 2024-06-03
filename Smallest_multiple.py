@@ -1,15 +1,8 @@
-rangemax = 20
-def div_check(n):
-    for i in xrange(11,rangemax+1):
-        if n % i == 0:
-            continue
-        else:
-            return False
-    return True
+import math
+def compute():
+	ans = math.lcm(*range(1, 21))
+	return str(ans)
 
-if __name__ == '__main__':
-   num = 2
-   while not div_check(num):
-       print num
-       num += 2
-   print num
+
+if _name_ == "_main_":
+	print(compute())
